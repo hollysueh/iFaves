@@ -1,0 +1,73 @@
+/* Main App Page Styling */
+.App {
+  text-align: center;
+  margin: 50px solid aliceblue;
+  padding: 30px;
+  background-color: aliceblue;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+#navDropdown {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.pageTitle {
+  margin: 10px;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+/* Dropdown Menu Styling */
+.dropdownMenu {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.dropdownLink {
+  text-decoration: none;
+  padding: 2px;
+}
+
+/* Search Form Styling */
+
+.searchForm {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  box-shadow: 2px 2px lightgrey;
+}
+
+#formDropdown {
+  padding: 20px;
+}
+
+.formButton {
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: navy;
+  color: white;
+  font-size: x-large;
+}
+
+/* Search Result & Favourite Lists Styling */
+#resultList, #favouriteList {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#delButton, #addButton {
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="helpBorder"
+>
+  <link
+    crossorigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    rel="stylesheet"
+  />
+  <form
+    className="form"
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        Search For:
+      </label>
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="search for..."
+        type="text"
+      />
+      <label
+        className="form-label"
+      >
+        Type of Media:
+      </label>
+      <div
+        className="dropdownMenu dropdown"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="dropdown"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Select Media
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <button
+      className="formButton btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <br />
+  <h2>
+    Results
+  </h2>
+  <ul
+    id="resultList"
+  />
+</div>
+`;
+
+exports[`renders states correctly when populated 1`] = `
+<div
+  className="helpBorder"
+>
+  <link
+    crossorigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    rel="stylesheet"
+  />
+  <form
+    className="form"
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        className="form-label"
+      >
+        Search For:
+      </label>
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="search for..."
+        type="text"
+      />
+      <label
+        className="form-label"
+      >
+        Type of Media:
+      </label>
+      <div
+        className="dropdownMenu dropdown"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="dropdown"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Select Media
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <button
+      className="formButton btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <br />
+  <h2>
+    Results
+  </h2>
+  <ul
+    id="resultList"
+  />
+</div>
+`;

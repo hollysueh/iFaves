@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="dropdownMenu dropdown"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="dropdown"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Select Here
+      </button>
+    </div>
+  </div>
+</div>
+`;
