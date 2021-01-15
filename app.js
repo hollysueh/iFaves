@@ -76,12 +76,12 @@ app.delete("/favesList", (req, res) => {
 })
 
 // For app deployment on Heroku
-if (process.env.NODE_ENV === 'production'){
+/* if (process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, 'iFaves_frontend/build')));
   app.get('*',(req,res)=> {
     res.sendFile(path.resolve(__dirname, 'iFaves_frontend', 'build','index.html'));
   });
-}
+} */
 
 module.exports = app
 
