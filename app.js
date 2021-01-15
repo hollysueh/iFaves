@@ -75,12 +75,6 @@ app.delete("/favesList", (req, res) => {
   }
 })
 
-//Listen on port 8081
-const PORT = process.env.PORT || 8081;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
-
 // For app deployment on Heroku
 if (process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, 'iFaves_frontend/build')));
@@ -88,6 +82,8 @@ if (process.env.NODE_ENV === 'production'){
     res.sendFile(path.resolve(__dirname, 'iFaves_frontend', 'build','index.html'));
   });
 }
+
+module.exports = app
 
 /*
 REFERENCES:
