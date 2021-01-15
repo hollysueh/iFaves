@@ -28,17 +28,17 @@ Once decompressed, first open a Terminal window (for Mac) or Command Prompt wind
 Next, open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-frontend' folder. In the window, type "npm install" and wait for the files to install.
 
 ##### GitHub
-*******************
-To install the game files, go to the repository 'iFaves'. On the left hand side there will be a green button labelled "Code". Click on this button, and from the dropdown menu click "Download zip. The zip file will then start automatically downloading to your computer.
+To install the app files, follow the link https://github.com/hollysueh/iFaves. On the left hand side there will be a green button labelled "Code". Click on this button, and from the dropdown menu click "Download zip. The zip file will then start automatically downloading to your computer.
 
 Once the zip file has finished downloading, open it by double-clicking on the file.
 Open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-backend' folder. In the window, type "npm install" and wait for the files to install.
 Repeat the above steps in the 'iFaves-frontend' folder.
 
-#### Heroku
-*******************
-
 ## Usage
+### Heroku
+Visit the following link to use the app online: https://damp-savannah-14433.herokuapp.com/
+
+### Local PC
 Open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-backend' folder. In the window, type "npm start", which will start the app's server on port 8081.
 Open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-frontend' folder. In the window, type "npm start", which will load the app in your browser on any available port.
 
