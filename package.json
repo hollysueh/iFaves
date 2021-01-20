@@ -8,7 +8,7 @@
     "test": "mocha",
     "frontend-install": "npm install --prefix ifaves_frontend",
     "frontend": "npm start --prefix ifaves_frontend",
-    "dev": "concurrently \"npm run ifaves-backend\" \"npm run ifaves_frontend\"",
+    "dev": "concurrently \"npm run ifaves-backend\" \"npm run iFaves_frontend\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix iFaves_frontend && npm run build --prefix iFaves_frontend"
   },
   "dependencies": {
