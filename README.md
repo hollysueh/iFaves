@@ -36,13 +36,13 @@ Repeat the above steps in the 'iFaves-frontend' folder.
 
 ## Usage
 ### Heroku
-Visit the following link to use the app online: https://damp-savannah-14433.herokuapp.com/
+Visit the following link to use the app online: https://ifaves.herokuapp.com/
 
 ### Local PC
 Open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-backend' folder. In the window, type "npm start", which will start the app's server on port 8081.
 Open a Terminal window (for Mac) or Command Prompt window (for Windows) in the 'iFaves-frontend' folder. In the window, type "npm start", which will load the app in your browser on any available port.
 
-## Instructions
+## App Instructions
 #### Search iTunes and Apple Book stores
 Click the dropdown menu at the top of the page and select 'Search'.
 In the text input field, enter any search term you wish to search for. Use the form's dropdown menu to select which type of media you want to search for.
