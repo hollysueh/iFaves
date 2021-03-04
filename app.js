@@ -14,6 +14,7 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       defaultSrc: ["'self'", "'unsafe-inline'"],
+      styleSrc: ["https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"],
       scriptSrc: ["'self'", "'unsafe-inline'"],
       imgSrc: ["'self'", "https://itunes.apple.com"],
       objectSrc: ["'none'"],
