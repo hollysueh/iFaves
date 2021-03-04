@@ -14,7 +14,7 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       defaultSrc: ["'self'", "'unsafe-inline'"],
-      styleSrc: ["https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"],
+      styleSrc: ["'self'", "https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"],
       scriptSrc: ["'self'", "'unsafe-inline'"],
       imgSrc: ["'self'", "https://itunes.apple.com"],
       objectSrc: ["'none'"],
@@ -26,7 +26,7 @@ app.use(
 
 //GET - Display list of favourite media
 app.get('/favesList', function(req, res) {
-  fs.readFile('./config/myFaves.json',  'utf-8', (err, data) => { //read file contents of 'myFaves.json'
+  fs.readFile('./myFaves.json',  'utf-8', (err, data) => { //read file contents of 'myFaves.json'
     if (err) res.json({"message": 'You haven`t favourited anything!'}); //Display error message if user tries to 'get' without 'post'ing first
     else
       res.json({"message": `${data}`}); //Display list of favourited media 
@@ -42,7 +42,7 @@ app.post('/search', function(req, res) {
 
 //POST - Add a media object to favourites
 app.post('/addFave', (req, res) => {
-  let favourites = JSON.parse(fs.readFileSync('./config/myFaves.json')); //read existing list of favourite media
+  let favourites = JSON.parse(fs.readFileSync('./myFaves.json')); //read existing list of favourite media
   let newFave = JSON.parse(`{
     "artistName":"${req.body.artistName}",
     "mediaKind":"${req.body.mediaKind}",
@@ -55,7 +55,7 @@ app.post('/addFave', (req, res) => {
 
   favourites.push(newFave); //add 'newFave' object into existing JSON array
 
-  fs.writeFile('./config/myFaves.json', JSON.stringify(favourites), (err) => { //write file with updated 'favourites'
+  fs.writeFile('./myFaves.json', JSON.stringify(favourites), (err) => { //write file with updated 'favourites'
     res.status(201).json(
       (favourites, 'Favourite added to list!') //return message if file updated successfully
     );
@@ -66,7 +66,7 @@ app.post('/addFave', (req, res) => {
 //DELETE - delete selected favourite media from list
 app.delete("/favesList", (req, res) => {
   let trackToDel = req.body.trackName; //get trackName of the 'favourite' object user wants to delete
-  let favourites = JSON.parse(fs.readFileSync('./config/myFaves.json')); //read current list of favourites
+  let favourites = JSON.parse(fs.readFileSync('./myFaves.json')); //read current list of favourites
  
   const findTrack = favourites.find(f => f.trackName == trackToDel); //find if favourite with corresponding trackName exists
   const foundTrack = favourites.filter(f => f.trackName != trackToDel); //filter objects to only elements WITHOUT matching trackName
@@ -77,7 +77,7 @@ app.delete("/favesList", (req, res) => {
   else { //if favourite exists with corresponding trackName...
     favourites = foundTrack; //update list of 'favourites'
     
-    fs.writeFile('./config/myFaves.json', JSON.stringify(favourites), (err) => { //write file with updated 'favourites' list
+    fs.writeFile('./myFaves.json', JSON.stringify(favourites), (err) => { //write file with updated 'favourites' list
       res.status(201).json(
         favourites, 'Successfully deleted!' //return message if object deleted successfully
       );
